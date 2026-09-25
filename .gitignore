@@ -1,0 +1,36 @@
+# === Secrets — SABSE ZAROORI ===
+.env
+*.env
+!.env.example
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# === Virtual environment ===
+venv/
+env/
+ENV/
+
+# === Generated / runtime data (dobara ban sakta hai code se) ===
+chroma_db/
+.deepeval/
+.deepeval_telemetry.txt
+deepeval-results/
+*.log
+
+# === OS junk ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Editor / IDE (optional — agar team mein VS Code settings share
+# nahi karni to ye rakho, agar karni hain to hata dena) ===
+.vscode/
+.idea/
+
+# === Jupyter (agar kabhi notebook use kiya) ===
+.ipynb_checkpoints/

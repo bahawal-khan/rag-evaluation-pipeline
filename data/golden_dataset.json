@@ -1,0 +1,52 @@
+[
+  {
+    "input": "NovaTech ki AI Data Governance policy ka document reference number aur effective date kya hai?",
+    "expected_output": "Document reference NT-AIGOV-2026-07 hai aur policy 1 March 2026 se effective hai (Version 3.2).",
+    "expected_chunk_reference": "Document Reference: NT-AIGOV-2026-07 | Effective Date: 1 March 2026 | Version: 3.2 | Owner: Data Governance Office"
+  },
+  {
+    "input": "Naya AI system deploy karne ke kitne din baad usay Data Governance Office ke sath register karna zaroori hai?",
+    "expected_output": "Naya AI system deploy hone ke 10 business days ke andar Data Governance Office ke sath register karna zaroori hai.",
+    "expected_chunk_reference": "Any new AI system deployed after 1 March 2026 must be registered with the Data Governance Office within 10 business days of going live."
+  },
+  {
+    "input": "Tier 3 Confidential data ko model training mein kis tarah use kiya ja sakta hai?",
+    "expected_output": "Tier 3 Confidential data ko general-purpose model training ke liye kabhi use nahi kiya ja sakta; ye sirf CISO se approved strictly isolated fine-tuning environment mein use ho sakta hai.",
+    "expected_chunk_reference": "Confidential data may never be used to train a general-purpose model. It may only be used in a strictly isolated fine-tuning environment approved by the Chief Information Security Officer (CISO)."
+  },
+  {
+    "input": "Restricted (Tier 4) data ka accidental training mein use ho jaye to kitne time mein report karna hoga?",
+    "expected_output": "Restricted data ka accidental inclusion 24 hours ke andar Severity 1 incident ke tor par report karna hoga.",
+    "expected_chunk_reference": "Restricted data must never be used for AI training under any circumstances, and any accidental inclusion must be reported as a Severity 1 incident within 24 hours."
+  },
+  {
+    "input": "Tier 2 Internal data training pipeline mein kitne time tak retain hoti hai?",
+    "expected_output": "Tier 2 Internal data training pipelines mein last use ki date se 18 months tak retain hoti hai, uske baad cold storage mein archive ho jati hai.",
+    "expected_chunk_reference": "Tier 2 (Internal) data used in training pipelines is retained for 18 months from the date of last use, after which it is archived to cold storage."
+  },
+  {
+    "input": "Approved fine-tuning environment mein Tier 3 Confidential data ka maximum retention period kitna hai?",
+    "expected_output": "Approved fine-tuning environment mein Tier 3 Confidential data ka maximum retention period 90 days hai, aur fine-tuning job complete hote hi ise delete karna zaroori hai.",
+    "expected_chunk_reference": "Tier 3 (Confidential) data used in an approved fine-tuning environment is retained for a maximum of 90 days and must be deleted immediately after the fine-tuning job completes."
+  },
+  {
+    "input": "RAG system ko 50 se zyada internal users ke liye release karne se pehle retriever evaluation mein kaunse do scores minimum 0.75 hone chahiye?",
+    "expected_output": "Retriever evaluation mein Contextual Precision aur Contextual Recall dono scores approved golden dataset par 0.75 ya us se zyada hone chahiye.",
+    "expected_chunk_reference": "At minimum, the evaluation must report Contextual Precision and Contextual Recall scores, and both scores must meet or exceed 0.75 on the approved golden dataset before release."
+  },
+  {
+    "input": "NovaTech ke approved AI vendor list mein kaunsi companies shamil hain?",
+    "expected_output": "Approved AI vendor list mein teen companies hain: hosted LLM inference ke liye Anthropic, compute infrastructure ke liye ek regional cloud provider, aur Tier 2 data labeling ke liye ek specialized annotation vendor.",
+    "expected_chunk_reference": "NovaTech's approved AI vendor list includes three companies: Anthropic for hosted LLM inference, a regional cloud provider for compute infrastructure, and a specialized annotation vendor for labeling Tier 2 data."
+  },
+  {
+    "input": "Severity 1 incident hone par CISO ko kitne time mein notify karna zaroori hai aur full report kab tak file karna hai?",
+    "expected_output": "Severity 1 incident mein CISO ko 4 hours ke andar notify karna hoga aur full incident report 5 business days ke andar file karni hogi.",
+    "expected_chunk_reference": "Severity 1 incidents, involving Restricted data, require the CISO to be notified within 4 hours and a full incident report to be filed within 5 business days."
+  },
+  {
+    "input": "Internal RAG ya generator evaluation ke liye banaye gaye golden datasets kitne time tak retain kiye jate hain?",
+    "expected_output": "Internally generate kiye gaye model training logs aur evaluation datasets, jaise RAG ya generator evaluation ke golden datasets, audit aur reproducibility ke liye 24 months tak retain kiye jate hain.",
+    "expected_chunk_reference": "Model training logs and evaluation datasets generated internally, such as golden datasets used for RAG or generator evaluation, are retained for 24 months to support audit and reproducibility requirements."
+  }
+]

@@ -1,0 +1,8 @@
+python-docx
+langchain-text-splitters
+chromadb
+sentence-transformers
+deepeval
+python-dotenv
+langchain-groq
+json-repair
