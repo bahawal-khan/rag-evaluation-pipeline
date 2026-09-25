@@ -64,8 +64,7 @@ Tests whether the retriever pulls the **right chunks**, in the **right order** �
 | **Contextual Precision** | Are the relevant chunks ranked at the top? |
 | **Contextual Recall** | Are *all* the facts needed to answer present somewhere in the retrieved chunks? |
 
-![Retriever Evaluation](screenshots/retriever_eval.png)
-
+![Retriever Evaluation](https://raw.githubusercontent.com/bahawal-khan/rag-evaluation-pipeline/main/screenshots/retriever_eval.png)
 ---
 
 ## 2️⃣ Generator Evaluation
@@ -77,14 +76,12 @@ Feeds the retriever's chunks into an LLM and checks whether the **generated answ
 | **Answer Relevancy** | Does the answer actually address the question? |
 | **Faithfulness** | Is the answer grounded in the retrieved context, or hallucinated? |
 
-![Generator Evaluation](screenshots/generator_eval.png)
-
+![Generator Evaluation](https://raw.githubusercontent.com/bahawal-khan/rag-evaluation-pipeline/main/screenshots/generator_eval.png)
 ## 3️⃣ Full Pipeline Evaluation (RAG Triad)
 
 All four metrics run together on the same test case — the real, end-to-end user experience.
 
-![Pipeline Evaluation](screenshots/pipeline_eval.png)
-
+![Pipeline Evaluation](https://raw.githubusercontent.com/bahawal-khan/rag-evaluation-pipeline/main/screenshots/pipeline_eval.png)
 ---
 
 ## 🛠️ Debugging with the System Prompt
